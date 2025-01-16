@@ -19,8 +19,8 @@ Try Kernel-Aは、CQ出版(株) **Interface 2024年11月号の特集「ゼロか
 対象H/W向けに全ソースコードをコンパイル、リンクしてください。  
 以下の各開発環境については、それぞれのブランチを参照してください。  
 
-- Eclipse Embedded CDTの場合 [project_eclipse](https://github.com/ytoyoyama/trykernel_a/tree/build_make)
-- Makeの場合   [build_make](https://github.com/ytoyoyama/trykernel_a/tree/build_make)
+- Eclipse Embedded CDTの場合 [project_eclipse](https://github.com/ytoyoyama/trykernel-a/tree/build_make)
+- Makeの場合   [build_make](https://github.com/ytoyoyama/trykernel-a/tree/build_make)
 
 ## ライセンスについて
 
