@@ -1,29 +1,23 @@
-﻿# Try Kernel-A - CMakeによるビルド
+﻿# Try Kernel-A - Makeによるビルド
 
 ## ビルド手順
-Linux(Ubuntu)を想定しています。
 
 1. 事前準備  
 Arm用GCCコンパイラのツールチェーン、Makeなどの必要なツールをインストールしてください。  
+各種ツールは以下から入手できます。  
+[The xPack Project](https://xpack.github.io/)
 
-```
-sudo apt install -y cmake gcc-arm-none-eabi gdb-multiarch
-```
 
 2. GitHubから本リポジトリをクローンします  
 ```
-git clone https://github.com/ytoyoyama/trykernel-a.git -b build_cmake
+git clone https://github.com/ytoyoyama/trykernel-a.git -b build_make
 ```  
 
 3. クローンしたディレクトリで以下を実行します  
 ```
-mkdir -p build; cd $_
-cmake ..
-make -j`nproc`
+cd build_make
+make all
 ```
 
-4. ビルドに成功すると`build/try-kernel`ディレクトリに`tryknl.elf`ファイルが生成されます。Raspberry Pi Picoにpico-toolなどで書き込んで実行してください。  
+4. ビルドに成功するとbuild_makeディレクトリに`tryknl.elf`ファイルが生成されます。Raspberry Pi Picoに書き込んで実行してください。  
 
-```
-pico-tool load -x -t elf try-kernel
-```
